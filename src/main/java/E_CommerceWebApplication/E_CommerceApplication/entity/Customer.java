@@ -12,7 +12,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Customers {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,12 +21,10 @@ public class Customers {
     private String name;
 
     @Column(unique = true)
-    private String mail;
+    private String email;
 
     private String password;
 
     private String address;
-
-
 
 }
